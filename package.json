@@ -1,0 +1,29 @@
+{
+  "name": "npmproject-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:serial": "hardhat test",
+    "test:parallel1": "mocha --extension ts --require ts-node/register --parallel --recursive",
+    "test:parallel2": "mocha --extension ts --require hardhat/register --parallel --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.0.8",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.0.0"
+  }
+}
